@@ -1,0 +1,164 @@
+body {
+  background-color: #272b30;
+  font-family: "Comfortaa one", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko", cursive !important;
+}
+
+header img {
+  height: 270px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+nav.navbar {
+  background-color: #3a497b;
+  margin-top: -30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+div.container h5.navbar-brand {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  color: white;
+}
+h5.navbar-brand img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+nav div.list a.nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12.25px;
+  line-height: 18.375px;
+}
+
+nav div.list .navbar-nav .nav-link.active {
+  color: #09c;
+}
+
+nav div.list .navbar-nav a:hover {
+  color: #09c;
+  transition: color 0.5s;
+}
+/* --------------------------------------------------------------------------------------- */
+/* Home Style */
+div.content {
+  transition: all 0.3s ease ;
+  
+}
+
+div.content:hover 
+ {
+  transform: scale(1.05);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+div.card-group div.card {
+  background-color: transparent;
+  color: white;
+}
+/* Card header */
+div.content:hover div.card-header {
+  filter: grayscale(0%);
+  transition: all 0.3s;
+}
+
+div.card-header {
+  border: none;
+  filter: grayscale(100%);
+}
+
+/* card body */
+
+div.card-body  {
+border-bottom: 1px solid #202328;
+}
+
+div.card-body h5.card-title {
+  font-size: 15px;
+}
+div.card-body button.btn {
+  border-radius: 6px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+}
+
+div.content:hover div.card-body button.btn{
+  background-color: #0d6efd !important;
+  transition:  all 0.3s ;
+}
+/* card text */
+div.card p.card-text {
+  font-size: 14px;
+  color: #8d9092;
+  line-height: 21px;
+  font-weight: 400;
+  height: 60px;
+  max-height:100px ;
+  overflow: hidden;
+}
+
+div.card div.spans span {
+  border-radius: 6px;
+  background-color: #363739;
+  padding: 5px;
+  font-size: 10.5px;
+  line-height: 10.5px;
+  font-weight: 700;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+/* ------------------------------------------------------------------------------- */
+/* Loading page */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.151);
+}
+
+.loader {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #FF5C35;
+  animation: spin 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+@keyframes spin {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(0.5) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 990px) {
+    section.details-games div.container img {
+      width: 90%;
+    }
+}
